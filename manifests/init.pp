@@ -45,6 +45,7 @@ class awscli (
   $pkg_pip          = $awscli::params::pkg_pip,
   $install_pkgdeps  = true,
   $install_pip      = true,
+  $manage_repos     = $awscli::params::manage_repos,
 ) inherits awscli::params {
   include awscli::deps
 

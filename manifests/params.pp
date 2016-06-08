@@ -1,6 +1,6 @@
 # == Class: awscli::params
 #
-# This class manages awscli parameters depending on the platform and 
+# This class manages awscli parameters depending on the platform and
 # should *not* be called directly.
 #
 class awscli::params {
@@ -19,4 +19,5 @@ class awscli::params {
       }
       default:  { fail("The awscli module does not support ${::osfamily}") }
     }
+    $manage_repos = true
 }
